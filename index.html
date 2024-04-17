@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>playtoo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="public/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+
+    <main>
+
+        <!-- ! *********************** sidebar section ***************************** -->
+
+        <div class="sidebar">
+            <div class="sidebar__content">
+
+                <div class="sidebar__logo">
+                    <div class="menu__close">
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </div>
+                    <img src="./public/images/forever.png" alt="playtoo" >
+                    <span>playtoo</span>
+                </div>
+                <div class="sidebar__platform">
+                    <div class="sidebar__filter">
+                        filter by platform
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="sidebar__platform-img sidebar__platform-pop"></div>
+                            <span>popular streams</span>
+                        </li>
+                        <li>
+                            <div class="sidebar__platform-img sidebar__platform-tour"></div>
+                            <span>tournaments</span>
+                        </li>
+                        <li>
+                            <div class="sidebar__platform-img sidebar__platform-vid"></div>
+                            <span>video gallery</span>
+                        </li>
+                        <li>
+                            <div class="sidebar__platform-img sidebar__platform-chat"></div>
+                            <span>chat</span>
+                        </li>
+                        <li>
+                            <div class="sidebar__platform-img sidebar__platform-setting"></div>
+                            <span>settings</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar__friends">
+                    <span class="sidebar__friends-title">friends</span>
+    
+                    <ul>
+                        <li>
+                            <div class="sidebar__friends-id">
+                                <div class="sidebar__friends-pic">
+                                    <img src="./public/images/pic-user.png" alt="">
+                                </div>
+                                <span>resident evil</span>
+                            </div>
+                            <div class="sidebar__friends-status">
+                                <i class="fa-solid fa-wifi"></i>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <div class="sidebar__friends-id">
+                                <div class="sidebar__friends-pic">
+                                    <img src="./public/images/pic-user.png" alt="">
+                                </div>
+                                <span>bad toby</span>
+                            </div>
+                            <div class="sidebar__friends-status">
+                                <i class="fa-solid fa-circle"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sidebar__friends-id">
+                                <div class="sidebar__friends-pic">
+                                    <img src="./public/images/pic-user.png" alt="">
+                                </div>
+                                <span>thomas shelby</span>
+                            </div>
+                            <div class="sidebar__friends-status">
+                                <i class="fa-solid fa-wifi"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sidebar__friends-id">
+                                <div class="sidebar__friends-pic">
+                                    <img src="./public/images/pic-user.png" alt="">
+                                </div>
+                                <span>
+                                    vampire </span>
+                            </div>
+                            <div class="sidebar__friends-status">
+                                <i class="fa-solid fa-circle"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sidebar__friends-id">
+                                <div class="sidebar__friends-pic">
+                                    <img src="./public/images/pic-user.png" alt="">
+                                </div>
+                                <span>
+                                    warfarins </span>
+                            </div>
+                            <div class="sidebar__friends-status">
+                                <i class="fa-solid fa-wifi"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="sidebar__friends-id">
+                                <div class="sidebar__friends-pic">
+                                    <img src="./public/images/pic-user.png" alt="">
+                                </div>
+                                <span>dark knight</span>
+                            </div>
+                            <div class="sidebar__friends-status">
+                                <i class="fa-solid fa-circle"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar__league">
+                    <div class="sidebar__league-pic">
+                        <img src="./public/images/RocketLeage.avif" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="main">
+            <!-- ! *********************** header section ***************************** -->
+
+            <div class="header">
+                <i class="fa-solid fa-bars menu__open"></i>
+
+                <div class="header__content">
+                    <div class="header__search">
+                        <div>
+                            <input type="text" id="search" label="search" placeholder="search">
+                        </div>
+                        <div class="header__search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div class="header__notif">
+                        <i class="fa-solid fa-bell"></i>
+                        <div class="header__notif-num">12</div>
+                    </div>
+                    <div class="header__id">
+                        <span>alex johnson</span>
+                        <div class="header__id-pic">
+                            <img src="./public/images/pic-user.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- ! *********************** slider section ***************************** -->
+            <div class="slider">
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="./public/images/slider-image.webp" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./public/images/popular3.webp" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./public/images/popular2.webp" alt="">
+
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./public/images/popular1 .webp" alt="">
+
+                      </div>
+
+                    </div>
+                    <div class="swiper-button-next swiper-chev"></div>
+                    <div class="swiper-button-prev swiper-chev"></div>
+                    <div class="swiper-pagination"></div>
+
+                  </div>
+            </div>
+
+            <!-- ! *********************** popular section ***************************** -->
+            <div class="popular">
+                <div class="popular__header">
+                    <div>popular <span>streams</span></div>
+                    <ul>
+                        <li>new</li>
+                        <li>winners</li>
+                        <li>special events</li>
+                        <li>music streaming</li>
+
+                    </ul>
+                    <div class="popular__header-list">
+                        <i class="fa-solid fa-ellipsis"></i>
+
+                        <div class="popular__header-list-items">
+                            <div class="popular__header-list-item">new</div>
+                            <div class="popular__header-list-item">winners</div>
+                            <div class="popular__header-list-item">special events</div>
+                            <div class="popular__header-list-item">music streaming</div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+                <div class="popular__content">
+
+                    <div class="popular__content-item item1">
+                        <div class="popular__content-pic">
+                            <div class="item1__pic">
+                                <img src="./public/images/popular1 .webp" alt="">
+                            </div>
+                            <div class="item1__cover1"></div>
+                            <div class="item1__cover2">
+                                <h4>online</h4>
+                            </div>
+                        </div>
+                        <div class="popular__content-info">
+                            <div class="popular__content-game">
+                                <h4>clash war games</h4>
+                                <span>watch the unique battle of the two most two powerfully teams</span>
+                                <div class="popular__content-game-watch">
+                                    <div class="popular__content-game-watch-number">
+                                        <div> <i class="fa-solid fa-circle"></i></div>
+                                        <h6>5.568</h6>
+                                    </div>
+                                    <a href="#">watch online</a>
+                                </div>
+                            </div>
+                            <div class="popular__content-teams">
+                                <div class="popular__content-teams-t1">
+                                    <div><img src="./public/images/team-icon1.webp" alt=""></div>
+                                    kings skeleton
+                                </div>
+                                <div><span>2 * 2</span></div>
+                                <div  class="popular__content-teams-t2">
+                                    <div><img src="./public/images/team-icon2.webp" alt=""></div>
+                                    dreams team
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popular__content-item item2">
+                        <div class="popular__content-pic">
+                            <div class="item1__pic">
+                                <img src="./public/images/popular2.webp" alt="">
+                            </div>
+
+                        </div>
+                        <div class="popular__content-info">
+                            <div class="popular__content-game">
+                                <h4>spider man games</h4>
+                                <span>watch the unique battle of the two most two powerfully teams</span>
+                                <div class="popular__content-game-watch">
+                                    <div class="popular__content-game-watch-number">
+                                        <div> <i class="fa-solid fa-circle"></i></div>
+                                        <h6>5.568</h6>
+                                    </div>
+                                    <a href="#">watch online</a>
+                                </div>
+                            </div>
+                            <div class="popular__content-teams">
+                                <div class="popular__content-teams-t1">
+                                    <div><img src="./public/images/team-icon1.webp" alt=""></div>
+                                    dev team
+                                </div>
+                                <div><span>2 * 2</span></div>
+                                <div  class="popular__content-teams-t2">
+                                    <div><img src="./public/images/team-icon2.webp" alt=""></div>
+                                    dragons teams                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="popular__content-item item3">
+                        <div class="popular__content-pic">
+                            <div class="item1__pic">
+                                <img src="./public/images/popular1 .webp" alt="">
+                            </div>
+                            <!-- <div class="item1__cover1"></div> -->
+                            <div class="item3__cover">
+                                <h4>offline</h4>
+                            </div>
+                        </div>
+                        <div class="popular__content-info">
+                            <div class="popular__content-game">
+                                <h4>clash war games</h4>
+                                <span>watch the unique battle of the two most two powerfully teams</span>
+                                <div class="popular__content-game-watch">
+                                    <div class="popular__content-game-watch-number">
+                                        <div> <i class="fa-solid fa-circle"></i></div>
+                                        <h6>5.568</h6>
+                                    </div>
+                                    <a href="#">watch online</a>
+                                </div>
+                            </div>
+                            <div class="popular__content-teams">
+                                <div class="popular__content-teams-t1">
+                                    <div><img src="./public/images/team-icon1.webp" alt=""></div>
+                                    kings skeleton
+                                </div>
+                                <div><span>2 * 2</span></div>
+                                <div  class="popular__content-teams-t2">
+                                    <div><img src="./public/images/team-icon2.webp" alt=""></div>
+                                    dreams team
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ! *********************** best section ***************************** -->
+
+            <div class="best">
+                <div class="best__header">
+                    <div class="best__header-title">best <span>streams</span></div>
+                    <div>
+                        <i class="fa fa-chevron-left"></i>
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+                </div>
+
+                <div class="best__content">
+
+                    <div class="best__item">
+                        <div class="best__item-pic">
+                            <div class="best__item-img1">
+
+                                <img src="./public/images/user1-transformed.webp" alt="">
+                            </div>
+
+                            <div class="best__item-img1-num"></div>
+                        </div>
+                        <div class="best__item-info">
+                            <h4>alex adams</h4>
+                            <div>
+                                <span>your position : </span>
+                                <h4>#10</h4>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="best__item">
+                        <div class="best__item-pic">
+                            <div class="best__item-img2">
+                                <img src="./public/images/user2-transformed.png" alt="">
+
+                            </div>
+                            <div class="best__item-img2-num"></div>
+                        </div>
+                        <div class="best__item-info">
+                            <h4>john rinses</h4>
+                            <div>
+                                <span>your position : </span>
+                                <h4>#7</h4>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="best__item">
+                        <div class="best__item-pic">
+                            <div class="best__item-img3">
+                                <img src="./public/images/user3-transformed.webp" alt="">
+
+                            </div>
+                            <div class="best__item-img3-num"></div>
+                        </div>
+                        <div class="best__item-info">
+                            <h4>sarah junior</h4>
+                            <div>
+                                <span>your position : </span>
+                                <h4>#8</h4>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="best__item">
+                        <div class="best__item-pic">
+                            <div class="best__item-img4">
+                                <img src="./public/images/user4-transformed.webp" alt="">
+
+                            </div>
+                            <div class="best__item-img4-num"></div>
+                        </div>
+                        <div class="best__item-info">
+                            <h4>tomy rash</h4>
+                            <div>
+                                <span>your position : </span>
+                                <h4>#2</h4>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="best__item">
+                        <div class="best__item-pic">
+                            <div class="best__item-img5">
+                                <img src="./public/images/user5-transformed.webp" alt="">
+
+                            </div>
+                            <div class="best__item-img5-num"></div>
+                        </div>
+                        <div class="best__item-info">
+                            <h4>xabi alaba</h4>
+                            <div>
+                                <span>your position : </span>
+                                <h4>#12</h4>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ! *********************** recent section ***************************** -->
+            <div class="recent">
+                <div class="recent__header">recent <span>tournaments</span></div>
+
+                <div class="recent__content">
+                    <div class="recent__battle">
+
+                        <div class="recent__final">
+                            
+                            <div class="recent__final-header">
+                                <h4>final battle</h4>
+                                <span> the best player of the tournament </span>
+                            </div>
+                            <div class="recent__final-content">
+                                <div class="recent__final-war">
+
+                                    <div class="recent__final-teams">
+
+                                        <div class="recent__final-team1">
+                                            <div class="recent__final-team1-pic">
+                                                <div class="recent__final-team1-cover"></div>
+                                                <img src="./public/images/team5.webp" alt="">
+                                            </div>
+                                            <div class="recent__final-teams-info">
+                                                <h4>dragons</h4>
+                                                <span>3 teams</span>
+                                            </div>
+                                        </div>
+    
+                                        <div class="recent__final-sword">
+                                            <img src="./public/images/sward.png" alt="">
+                                        </div>
+    
+                                        <div class="recent__final-team2">
+                                            <div class="recent__final-team2-pic">
+                                                <div class="recent__final-team2-cover"></div>
+                                                <img src="./public/images/team4.webp" alt="">
+                                            </div>
+                                            <div class="recent__final-teams-info">
+                                                <h4>dragons</h4>
+                                                <span>3 teams</span>
+                                            </div>
+                                        </div>
+    
+                                        <div class="recent__final-sword">
+                                            <img src="./public/images/sward.png" alt="">
+                                        </div>
+    
+                                        <div class="recent__final-team3">
+                                            <div class="recent__final-team3-pic">
+                                                <div class="recent__final-team3-cover"></div>
+                                                <img src="./public/images/team1.webp" alt="">
+                                            </div>
+                                            <div class="recent__final-teams-info">
+                                                <h4>dragons</h4>
+                                                <span>3 teams</span>
+                                            </div>
+                                        </div>
+    
+           
+                                    </div>
+
+                                    <div class="recent__final-pbar">
+                                        <div class="recent__final-progress">70%</div>
+                                    </div>
+                                </div>
+
+                                <div class="recent__final-table">
+                                    <i class="fa-solid fa-list-ul recent__final-table-menu"></i>
+                                    <div class="recent__final-table-list">
+
+                                        <div class="recent__final-table-title">
+                                            <i class="fa fa-chevron-left"></i>
+                                            <div>group d</div>
+                                            <i class="fa fa-chevron-right"></i>
+                                        </div>
+                                        <div class="recent__final-table-content">
+    
+                                            <div class="recent__final-table-team">
+                                                <div class="recent__final-table-team-rank">
+                                                    <span>1</span>
+                                                    <div class="recent__final-table-team-name">
+                                                        <img src="./public/images/team-icon1.webp" alt="">
+                                                        kings team
+                                                    </div>
+                                                </div>
+                                                <div class="recent__final-table-team-points">
+                                                    <div>
+                                                        <img src="./public/images/coins.png" alt="">
+                                                        182
+                                                    </div>
+                                                    <span>5.2</span>
+                                                </div>
+                                            </div>
+                                            <div class="recent__final-table-team">
+                                                <div class="recent__final-table-team-rank">
+                                                    <span>1</span>
+                                                    <div class="recent__final-table-team-name">
+                                                        <img src="./public/images/team-icon1.webp" alt="">
+                                                        kings team
+                                                    </div>
+                                                </div>
+                                                <div class="recent__final-table-team-points">
+                                                    <div>
+                                                        <img src="./public/images/coins.png" alt="">
+                                                        182
+                                                    </div>
+                                                    <span>5.2</span>
+                                                </div>
+                                            </div>
+                                            <div class="recent__final-table-team">
+                                                <div class="recent__final-table-team-rank">
+                                                    <span>1</span>
+                                                    <div class="recent__final-table-team-name">
+                                                        <img src="./public/images/team-icon1.webp" alt="">
+                                                        kings team
+                                                    </div>
+                                                </div>
+                                                <div class="recent__final-table-team-points">
+                                                    <div>
+                                                        <img src="./public/images/coins.png" alt="">
+                                                        182
+                                                    </div>
+                                                    <span>5.2</span>
+                                                </div>
+                                            </div>
+                                            <div class="recent__final-table-team">
+                                                <div class="recent__final-table-team-rank">
+                                                    <span>1</span>
+                                                    <div class="recent__final-table-team-name">
+                                                        <img src="./public/images/team-icon1.webp" alt="">
+                                                        kings team
+                                                    </div>
+                                                </div>
+                                                <div class="recent__final-table-team-points">
+                                                    <div>
+                                                        <img src="./public/images/coins.png" alt="">
+                                                        182
+                                                    </div>
+                                                    <span>5.2</span>
+                                                </div>
+                                            </div>
+                                            <div class="recent__final-table-team">
+                                                <div class="recent__final-table-team-rank">
+                                                    <span>1</span>
+                                                    <div class="recent__final-table-team-name">
+                                                        <img src="./public/images/team-icon1.webp" alt="">
+                                                        kings team
+                                                    </div>
+                                                </div>
+                                                <div class="recent__final-table-team-points">
+                                                    <div>
+                                                        <img src="./public/images/coins.png" alt="">
+                                                        182
+                                                    </div>
+                                                    <span>5.2</span>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="recent__cod">
+
+                            <div class="recent__cod-pic"><img src="./public/images/callofduty.webp" alt=""></div>
+
+                            <div class="recent__cod-info">
+                                <h4>call of duty</h4>
+                                <span>22 people</span>
+                            </div>
+
+                            <div class="recent__cod-linebetween"></div>
+
+                            <div class="recent__cod-info recent__cod-time">
+                                <h4>time</h4>
+                                <span> 22:18:38 </span>
+                            </div>
+                            
+                            <div class="recent__cod-linebetween"></div>
+
+                            <div class="recent__cod-info recent__cod-date">
+                                <h4>date</h4>
+                                <span> 2023/10/10 </span>
+                            </div>
+                            
+                            <div class="recent__cod-linebetween"></div>
+
+                            <div class="recent__cod-info">
+                                <h4>expiration date</h4>
+                                <span> 2023/11/11 </span>
+                            </div>
+
+                            <div class="recent__cod-progress">
+                                <h4>64%</h4>
+
+                                <div class="recent__cod-progress-cover"></div>
+                            </div>
+
+                        </div>
+
+                        <div class="recent__coc">
+
+                            <div class="recent__coc-pic"><img src="./public/images/clash.webp" alt=""></div>
+
+                            <div class="recent__coc-info">
+                                <h4>call of duty</h4>
+                                <span>22 people</span>
+                            </div>
+
+                            <div class="recent__coc-linebetween"></div>
+
+                            <div class="recent__coc-info recent__coc-time">
+                                <h4>time</h4>
+                                <span> 22:18:38 </span>
+                            </div>
+                            
+                            <div class="recent__coc-linebetween"></div>
+
+                            <div class="recent__coc-info recent__coc-date">
+                                <h4>date</h4>
+                                <span> 2023/10/10 </span>
+                            </div>
+                            
+                            <div class="recent__coc-linebetween"></div>
+
+                            <div class="recent__coc-info">
+                                <h4>expiration date</h4>
+                                <span> 2023/11/11 </span>
+                            </div>
+
+                            <div class="recent__coc-progress">
+                                <h4>77%</h4>
+
+                                <div class="recent__coc-progress-cover"></div>
+                            </div>
+
+                        </div>
+
+                        <div class="recent__showmore">
+                            <span>show more</span>
+                        </div>
+
+                        <div class="recent__tours-vertical">
+
+                            <div class="recent__tours-vertical-title">
+                                <h4>closing tournaments</h4>
+                                <span>play of battles</span>
+                            </div>
+
+                            <div class="recent__tours-vertical-war">
+
+                                <div>
+    
+                                    <div class="recent__tours-war1">
+                                        <div class="recent__tours-war1-team1">
+    
+                                            <div class="recent__tours-war1-team1-avatar">
+                                                <img src="./public/images/team2.webp" alt="">
+                                                <div class="recent__tours-war1-team1-avatar-cov"></div>
+                                            </div>
+                                            <div class="recent__tours-war1-team1-info">
+                                                <h4>skeleton</h4>
+                                                <span>4 members</span>
+                                            </div>
+                                        </div>
+                                        <div class="recent__tours-result">
+                                            4 : 6
+                                        </div>
+        
+                                        <div class="recent__tours-war1-team2">
+        
+                                            <div class="recent__tours-war1-team2-avatar">
+                                                <img src="./public/images/team6.webp" alt="">
+                                                <div class="recent__tours-war1-team2-avatar-cov"></div>
+                                            </div>
+                                            <div class="recent__tours-war1-team2-info">
+                                                <h4>winners</h4>
+                                                <span>3 members</span>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="recent__tours-war1-pbar">
+                                        <div class="recent__tours-war1-progress">60%</div>
+                                    </div>
+    
+                                </div>
+    
+                                <div>
+                                    <div class="recent__tours-war1">
+                                        <div class="recent__tours-war1-team1">
+    
+                                            <div class="recent__tours-war1-team1-avatar">
+                                                <img src="./public/images/team2.webp" alt="">
+                                                <div class="recent__tours-war1-team1-avatar-cov"></div>
+                                            </div>
+                                            <div class="recent__tours-war1-team1-info">
+                                                <h4>skeleton</h4>
+                                                <span>4 members</span>
+                                            </div>
+                                        </div>
+                                        <div class="recent__tours-result">
+                                            4 : 6
+                                        </div>
+        
+                                        <div class="recent__tours-war1-team2">
+        
+                                            <div class="recent__tours-war1-team2-avatar">
+                                                <img src="./public/images/team6.webp" alt="">
+                                                <div class="recent__tours-war1-team2-avatar-cov"></div>
+                                            </div>
+                                            <div class="recent__tours-war1-team2-info">
+                                                <h4>winners</h4>
+                                                <span>3 members</span>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="recent__tours-war1-pbar">
+                                        <div class="recent__tours-war1-progress">60%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent__tours">
+
+                        <div class="recent__tours-title">
+                            <h4>closing tournaments</h4>
+                            <span>play of battles</span>
+                        </div>
+
+                        <div class="recent__tours-war">
+
+                            <div>
+
+                                <div class="recent__tours-war1">
+                                    <div class="recent__tours-war1-team1">
+
+                                        <div class="recent__tours-war1-team1-avatar">
+                                            <img src="./public/images/team2.webp" alt="">
+                                            <div class="recent__tours-war1-team1-avatar-cov"></div>
+                                        </div>
+                                        <div class="recent__tours-war1-team1-info">
+                                            <h4>skeleton</h4>
+                                            <span>4 members</span>
+                                        </div>
+                                    </div>
+                                    <div class="recent__tours-result">
+                                        4 : 6
+                                    </div>
+    
+                                    <div class="recent__tours-war1-team2">
+    
+                                        <div class="recent__tours-war1-team2-avatar">
+                                            <img src="./public/images/team6.webp" alt="">
+                                            <div class="recent__tours-war1-team2-avatar-cov"></div>
+                                        </div>
+                                        <div class="recent__tours-war1-team2-info">
+                                            <h4>winners</h4>
+                                            <span>3 members</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="recent__tours-war1-pbar">
+                                    <div class="recent__tours-war1-progress">60%</div>
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <div class="recent__tours-war1">
+                                    <div class="recent__tours-war1-team1">
+
+                                        <div class="recent__tours-war1-team1-avatar">
+                                            <img src="./public/images/team2.webp" alt="">
+                                            <div class="recent__tours-war1-team1-avatar-cov"></div>
+                                        </div>
+                                        <div class="recent__tours-war1-team1-info">
+                                            <h4>skeleton</h4>
+                                            <span>4 members</span>
+                                        </div>
+                                    </div>
+                                    <div class="recent__tours-result">
+                                        4 : 6
+                                    </div>
+    
+                                    <div class="recent__tours-war1-team2">
+    
+                                        <div class="recent__tours-war1-team2-avatar">
+                                            <img src="./public/images/team6.webp" alt="">
+                                            <div class="recent__tours-war1-team2-avatar-cov"></div>
+                                        </div>
+                                        <div class="recent__tours-war1-team2-info">
+                                            <h4>winners</h4>
+                                            <span>3 members</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="recent__tours-war1-pbar">
+                                    <div class="recent__tours-war1-progress">60%</div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="recent__tours-btn">
+                            <h4>put on the winners</h4>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ! *********************** pops section ***************************** -->
+
+            <div class="pops">
+                <div class="pops__title">
+                    <div>
+                        popular <span>tournaments</span>
+                    </div>
+
+                    <ul>
+                        <li>new</li>
+                        <li>7 days ago</li>
+                        <li>2 days later</li>
+                        <li>month ago</li>
+                    </ul>
+
+                    <div class="pops__title-list">
+                        <i class="fa-solid fa-ellipsis"></i>
+
+                        <div class="pops__title-list-items">
+                            <div class="pops__title-list-item">new</div>
+                            <div class="pops__title-list-item">winners</div>
+                            <div class="pops__title-list-item">special events</div>
+                            <div class="pops__title-list-item">music streaming</div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+                <div class="pops__content">
+                    <div class="pops__need">
+                        <div class="pops__need-pic">
+                            <img src="./public/images/tournament1.jpeg" alt="">
+                            <div class="pops__need-pic-cov">need for speed</div>
+                        </div>
+
+                        <div class="pops__need-discount">
+                             10% discount
+                        </div>
+                    </div>
+                    <div class="pops__logos">
+
+                        <div class="pops__logo1">
+                            <div class="pops__logo1-pic">
+                                <img src="./public/images/tournament2.jpg" alt="">
+                                <div class="pops__logo1-pic-info">
+                                    <h4>start wars logo game</h4>
+                                    <span>your position : #14</span>
+                                </div>
+                                <div class="pops__logo1-pic-cov">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pops__logo2">
+                            <div class="pops__logo2-pic">
+                                <img src="./public/images/tournament3.jpeg" alt="">
+                                <div class="pops__logo2-pic-info">
+                                    <h4>start wars logo game</h4>
+                                    <span>your position : #14</span>
+                                </div>
+                                <div class="pops__logo2-pic-cov">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+
+    
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+
+    <script src="./public/js/main.js"></script>
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+</body>
+</html>

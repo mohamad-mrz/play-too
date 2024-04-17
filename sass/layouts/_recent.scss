@@ -1,0 +1,742 @@
+.recent{
+    margin-top: 4rem;
+    &__header{
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        span{
+            color:$pink-play
+        }
+    }
+    &__content{
+        @include centerize(start , center);
+        margin-top: 3rem;
+        gap: 1rem;
+        height: min-content;
+        position: relative;
+    }
+    &__battle{
+        width: 70%;
+        @include responsive(phonel){
+            width: 100%;
+        }
+    }
+    &__final{
+        background-color: $bg-play;
+        border-radius: 1rem;
+        padding: 1rem;
+        &-header{
+            text-transform: uppercase;
+            font-size: $font-size-xlarge;
+            h4{
+                margin-bottom: .5rem;
+                font-weight: 600;
+            }
+            span{
+                color: green;
+                font-size: $font-size-medium
+            };
+        }
+        &-content{
+            @include centerize(start,space-between);
+            gap: 1rem;
+        }
+        &-war{
+            width: 70%;
+            @include responsive(phone){
+                width: 100%;
+            }
+        }
+        &-teams{
+            @include centerize($justify:space-between);
+            // width: 70%;
+            margin:4rem 0;
+
+            &-info{
+                @include centerize;
+                flex-direction: column;
+                gap: 1rem;
+                h4{
+                    font-size: $font-size-large;
+                    text-transform: uppercase;
+                }
+                span{
+                    color:$gray-play
+                }
+            }
+
+        }
+
+        &-team1{
+            @include centerize;
+            flex-direction:column;
+            gap: 1.5rem;
+
+            &-pic{
+
+                @include centerize;
+                position: relative;
+                border-radius: 50%;
+                width: 11rem;
+                height: 11rem;
+                padding: .2rem;
+                box-shadow: 0 0 20px #52529b;
+                background-image: conic-gradient(#ff2b28 25%, #e73bf3 0);
+
+                @include responsive(smarts){
+                    width: 10rem;
+                    height: 10rem;
+                }
+            }
+            &-cover{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background: radial-gradient(circle, #9c091c 0, #e31c3b 50%, #323676 100%);
+            }
+            img{
+                width: 50%;
+                position: absolute;
+            }
+            &-info{}
+        }
+        &-team2{
+            @include centerize;
+            flex-direction:column;
+            gap: 1.5rem;
+
+            &-pic{
+
+                @include centerize;
+                position: relative;
+                border-radius: 50%;
+                width: 160px;
+                height: 160px;
+                padding: .2rem;
+                box-shadow: 0 0 20px #52529b;
+                background-image: conic-gradient(#ff2b28 25%, blue 0);
+                @include responsive(smarts){
+                    width: 14rem;
+                    height: 14rem;
+                }
+            }
+            &-cover{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background: radial-gradient(circle, #0658c6 0, #0c678a 50%, #000307 100%);            }
+            img{
+                width: 50%;
+                position: absolute;
+            }
+            &-info{}
+        }
+        &-team3{
+            @include centerize;
+            flex-direction:column;
+            gap: 1.5rem;
+
+            &-pic{
+                @include centerize;
+                position: relative;
+                border-radius: 50%;
+                width: 11rem;
+                height: 11rem;
+                padding: .2rem;
+                box-shadow: 0 0 20px #52529b;
+                background-image: conic-gradient(#eca819 25%, blue 0);  
+                
+                @include responsive(smarts){
+                    width: 10rem;
+                    height: 10rem;
+                }
+            
+            }
+            &-cover{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background: radial-gradient(circle, #eca819 0, #eca819 50%, #000307 100%);
+            }
+            img{
+                width: 50%;
+                position: absolute;
+            }
+            &-info{}
+        }
+        &-sword{
+            width: 3rem;
+
+            img{
+                width: 100%;
+                // height: ;
+            }
+
+        }
+        &-pbar{
+            width: 100%;
+            border-radius: 1rem;
+            overflow: hidden;
+            background-color: $bg-main;
+            margin-top: 2rem;
+        }
+        &-progress{
+            @include centerize;
+            background: linear-gradient(120deg, yellow 0%, #e4ec7f 50%, #ffffb7 70%);
+            font-weight: 600;
+            border-radius: inherit;
+            color: black;
+            width: 70%;
+            padding: .2rem 0;
+        }
+
+        &-table{
+            width: 30%;
+            padding:.5rem ;
+            // transition: all 200ms ease-out;
+            @include responsive(phone){
+                width: max-content;
+                &:hover &-list{
+                    display: block;
+                }
+                &:hover{
+                    display: flex;
+                    align-items:start;
+                }
+            }
+
+            &-list{
+                @include responsive(phone){
+                    display: none;
+                    position: absolute;
+                    right: 1rem;
+                    background-color: $bg-main;
+                    padding: 1rem;
+                    border-radius: 1rem;
+                }
+            }
+
+            &-menu{
+                display: none;
+                font-size: 2rem;
+                @include responsive(phone){
+                    display: block;
+                }
+            }
+
+            &-title{
+
+                @include centerize;
+                height: 4rem;
+                overflow: hidden;
+                width: 100%;
+                gap: .2rem;
+                i{
+                    background-color: $blue-bg-play;
+                    // padding:1.5rem;
+                    width: 4rem;
+                    font-size: $font-size-large;
+                    cursor: pointer;
+                    @include centerize;
+                    height: 100%;
+                    border-radius: .5rem;
+                }
+                div{
+                    @include centerize;
+                    font-size: $font-size-medium;
+                    text-transform: uppercase;
+                    letter-spacing: .2rem;
+                    background-color: $blue-bg-play;
+                    // padding: 1rem;
+                    height: 100%;
+                    border-radius: .5rem;
+                    width: 90%;
+                }
+            }
+
+            &-content{
+                width: 100%;
+                margin-top: 1rem;
+            }
+            &-team{
+                @include centerize($justify:space-between);
+                background-color: $bg-main;
+                padding: .5rem;
+                border-radius: 1rem;
+                font-weight: 600;
+                font-size:1rem;
+                margin-bottom: .2rem;
+                transition: all 200ms ease-out;
+                cursor: pointer;
+                &:hover{
+                    background-color: #9b061c;
+                }
+                span{
+                    padding: 1rem;
+                    border-radius: .5rem;
+                    background-color: $bg-play;
+                }
+                
+                &-rank{
+                    @include centerize;
+                    gap: .5rem;
+
+                }
+                &-name{
+                    @include centerize;
+                    gap: .5rem;
+                    text-transform: uppercase;
+                    img{
+                        width: 15px;
+                    }
+                }
+
+                &-points{
+                    @include centerize; 
+                    gap: 1rem;
+
+                    @include responsive(phone){
+                        img{
+                            display: none;
+                        }
+                    }
+                    div{
+                        @include centerize;
+                        gap: .5rem;
+                    }
+                    img{
+                        width: 15px;
+                    }
+                }
+            }
+
+        }
+    }
+  
+    &__cod{
+        @include centerize($justify:space-between);
+        height: 11rem;
+        width: 100%;
+        background-color: $bg-play;
+        border-radius: 1rem;
+        margin-top: 1rem;
+        overflow: hidden;
+
+        &-pic{
+            width: 8rem;
+            img{
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+        &-info{
+            @include centerize;
+            flex-direction: column;
+            gap: 2rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: $font-size-large;
+
+            span{
+                color:$gray-play;
+                text-transform: capitalize;
+                font-size:$font-size-small;
+            }
+        }
+        &-linebetween{
+            height: 69%;
+            width: 2px;
+            background: #4242429c;
+            transform: rotate(30deg);
+            border-radius: 0.5rem;
+
+            @include responsive(smarts){
+                display: none;
+            }
+        }
+        &-progress{
+            width: 15rem;
+            height: 100%;
+            position: relative;
+            h4{
+                @include centerize;
+                width: 100%;
+                height: 100%;
+                background: #d338f8;
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 2.5rem;
+                z-index: 10;
+                clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
+                padding-left: 2.5rem;
+            }
+
+            &-cover{
+                width: 100%;
+                height: 100%;
+                clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
+                background: rgba(210, 58, 248, 0.5);
+                position: absolute;
+                top: 0;
+                right: .5rem;
+            }
+        }
+
+        &-time , &-date{
+            @include responsive(smarts){
+
+                display:none;
+            }
+            
+        }
+
+    }
+    &__coc{
+        @include centerize($justify:space-between);
+        height: 11rem;
+        width: 100%;
+        background-color: $bg-play;
+        border-radius: 1rem;
+        margin-top: 1rem;
+        overflow: hidden;
+
+        &-pic{
+            width: 8rem;
+            img{
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+        &-info{
+            @include centerize;
+            flex-direction: column;
+            gap: 2rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: $font-size-large;
+
+            span{
+                color:$gray-play;
+                text-transform: capitalize;
+                font-size:$font-size-small;
+            }
+        }
+        &-linebetween{
+            height: 69%;
+            width: 2px;
+            background: #4242429c;
+            transform: rotate(30deg);
+            border-radius: 0.5rem;
+
+            @include responsive(smarts){
+                display: none;
+            }
+        }
+        &-progress{
+            width: 15rem;
+            height: 100%;
+            position: relative;
+            h4{
+                @include centerize;
+                width: 100%;
+                height: 100%;
+                clip-path: polygon(40% 0px, 100% 0, 100% 100%, 0 100%);
+                background: #2f90fb;
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 2.5rem;
+                z-index: 10;
+                padding-left: 2.5rem;
+            }
+
+            &-cover{
+                width: 100%;
+                height: 100%;
+                clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
+                background: rgba(114, 172, 243, 0.5);
+                position: absolute;
+                top: 0;
+                right: .5rem;
+            }
+        }
+
+        &-time , &-date{
+            @include responsive(smarts){
+
+                display:none;
+            }
+            
+        }
+    }
+
+    &__showmore{
+
+        @include centerize;
+        width: 100%;
+        background-color: #0761dc;
+        text-transform: uppercase;
+        padding: 1.5rem 0;
+        border-radius: 1rem;
+        font-weight: normal;
+        font-size: 2.5rem;
+        margin-top: 1rem;
+        cursor: pointer;
+
+        &:hover{
+            span{
+                transform: scale(1.1);
+            }
+        }
+        span{
+            transition: all 200ms ease-out;
+        }
+    }
+    &__tours{
+        padding: 1rem;
+        background-color: $bg-play;
+        width: 29%;
+        border-radius: 1rem;
+        height:100%;
+
+        @include responsive(phonel){
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 100;
+        }
+
+        &-title{
+            text-transform: uppercase;
+            font-size: $font-size-large;
+            font-weight: 600;
+            h4{
+                margin-bottom: 1rem;
+            }
+            span{
+                color:$green-bg-play;
+                font-size: $font-size-medium;
+                font-weight: 400;
+            }
+        }
+        &-war{
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+        }
+
+        &-war1{
+            @include centerize($justify:space-between);
+            @include responsive(phonel){
+                gap: 2rem;
+            }
+            @include responsive(smarts){
+                gap: .5rem;
+            }
+
+            &-team1{
+                width: 40%;
+                @include centerize;
+                flex-direction: column;
+
+                &-avatar{
+                    @include centerize;
+                    // width: 40%;
+                    background-image: conic-gradient(#1eac0a 25%, #85041d 0);
+                    box-shadow: 0 0 20px #8383ff;
+                    border-radius: 50%;
+                    width: 11rem;
+                    height: 11rem;
+                    position: relative;
+                    // margin: 1rem 0 1.5rem 0;
+
+                    @include responsive(smarts){
+                        width: 9rem;
+                        height: 9rem;
+                    }
+                    &-cov{
+                        background: radial-gradient(circle, #9c091c 0, #e31c3b 50%, #323676 100%);
+                        width: 95%;
+                        height: 95%;
+                        position: absolute;
+                        border-radius: inherit;
+                    }
+                    img{
+                        width: 50%;
+                        position: absolute;
+                        z-index: 10;
+                        border-radius: inherit;
+                    }
+                }
+                &-info{
+                    margin-top: 2rem;
+                    @include centerize;
+                    flex-direction: column;
+                    gap: 1rem;
+                    h4{
+                        font-size: $font-size-xlarge;
+                        text-transform: uppercase;
+
+                        @include responsive(smarts){
+                            font-size: $font-size-medium;
+                        }
+                    }
+                    span{
+                        font-weight:bold;
+                        font-size: $font-size-small;
+                        color: $gray-play;
+                    }
+                }
+            }
+            &-team2{
+                width: 40%;
+                @include centerize;
+                flex-direction: column;
+
+                &-avatar{
+                    @include centerize;
+                    // width: 40%;
+                    background-image: conic-gradient(#1eac0a 25%, #85041d 0);
+                    box-shadow: 0 0 20px #8383ff;
+                    border-radius: 50%;
+                    width: 11rem;
+                    height: 11rem;
+                    position: relative;
+                    // margin: 1rem 0 1.5rem 0;
+
+                    @include responsive(smarts){
+                        width: 9rem;
+                        height: 9rem;
+                    }
+                    &-cov{
+                        background: radial-gradient(circle, #9c091c 0, #e31c3b 50%, #323676 100%);
+                        width: 95%;
+                        height: 95%;
+                        position: absolute;
+                        border-radius: inherit;
+                    }
+                    img{
+                        width: 50%;
+                        position: absolute;
+                        z-index: 10;
+                        border-radius: inherit;
+                    }
+                }
+                &-info{
+                    margin-top: 2rem;
+                    @include centerize;
+                    flex-direction: column;
+                    gap: 1rem;
+                    h4{
+                        font-size: $font-size-xlarge;
+                        text-transform: uppercase;
+
+                        @include responsive(smarts){
+                            font-size: $font-size-medium;
+                        }
+                    }
+                    span{
+                        font-weight:bold;
+                        font-size: $font-size-small;
+                        color: $gray-play;
+                    }
+                }
+            }
+
+            &-pbar{
+                width: 100%;
+                font-size: 0.8rem;
+                background: #111a23;
+                border-radius: 1rem;
+                margin-top: 3rem;
+
+            }
+            &-progress{
+                @include centerize;
+                color: black;
+                border-radius: inherit;
+                width: 60%;
+                // height: 100%;
+                padding: .2rem;
+                background: linear-gradient(120deg, yellow 0%, #e4ec7f 50%, #ffffb7 70%);
+            }
+        }
+
+        &-result{
+            font-size: 2.5rem;
+            font-weight: 600;
+            width: 20%;
+            @include centerize;
+            
+
+            @include responsive(smarts){
+                font-size: 1.5rem;
+            }
+        }
+
+        &-btn{
+            @include centerize;
+            width: 100%;
+            background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+            margin-top: 1.5rem;
+            padding: 1.6rem 0;
+            border-radius: .4rem;
+            color: black;
+            text-transform: uppercase;
+            font-size: $font-size-medium;
+            margin-top: 4.5rem;
+            h4{
+
+                transition: all 400ms ease-out;
+            }
+
+            &:hover{
+                h4{
+                    letter-spacing: .2rem;
+                }
+            }
+        }
+
+        &-vertical{
+
+            background-color: $bg-play;
+            width: 100%;
+            padding: 2rem  0; 
+            margin-top: 1rem;
+            border-radius: 1rem;
+            display: none;
+            @include responsive(phonel){
+                display: block;
+            }
+            &-title{
+                text-align: center;
+                text-transform: uppercase;
+                font-size: $font-size-large;
+                font-weight: 600;
+                h4{
+                    margin-bottom: 1rem;
+                }
+                span{
+                    color:$green-bg-play;
+                    font-size: $font-size-medium;
+                    font-weight: 400;
+                }
+            }
+            &-war{
+                @include centerize($justify:space-around);
+                margin-top: 2rem;
+                // gap: 3rem;
+
+                // &div{
+                //     width: 50%;
+                // }
+            }
+        }
+
+    }
+}

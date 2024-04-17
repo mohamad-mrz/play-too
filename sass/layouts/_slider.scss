@@ -1,0 +1,40 @@
+.slider{
+    // border: 1px solid red;
+    height: 55rem;
+    @include responsive(smarts){
+        height: 40rem;
+    }
+}
+
+
+
+
+
+.swiper{
+    height: 100%;
+    border-radius: 1rem;
+
+    &-slide{
+        height: 100%;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &-chev{
+        background-color: rgba(195, 195, 195, 0.4);
+        border-radius: 50%;
+        @include centerize;
+        padding: 1.5rem;
+        @include responsive(phone){
+            display: none;
+        }
+        &::after{
+            cursor: pointer;
+            color: white;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    }
+}

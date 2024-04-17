@@ -1,0 +1,57 @@
+@mixin centerize($align:center , $justify:center){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin positioncenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@mixin ellipse($lines) {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+
+}
+
+
+// ! ********** max-width : 0 --- 448 px  = 28 em ************  : smarts
+// ! ********** max-width : 450 --- 576 px  = 36 em ************  : phone
+// ! ********** max-width : 576 --768 px  = 48 em ************  : phonel
+// ! ********** max-width : 768 --992 px  = 62 em ************  : tablet
+// ! ********** max-width : 992--1200 px  = 75 em ************  : tabletl
+
+
+@mixin responsive($breakpoint){
+
+    @if $breakpoint == "smarts"{
+        @media only screen and (max-width : 28em){
+            @content;
+        }
+}
+    @if $breakpoint == "phone"{
+        @media only screen and (max-width : 36em){
+            @content;
+        }
+}
+    @if $breakpoint == "phonel"{
+        @media only screen and (max-width: 48em){
+            @content;
+        }
+}
+    @if $breakpoint == "tablet" {
+        @media only screen and (max-width : 62em){
+            @content;
+        }
+    }
+    @if $breakpoint == "tabletl" {
+        @media only screen and (max-width : 75em){
+            @content;
+        }
+    }
+}

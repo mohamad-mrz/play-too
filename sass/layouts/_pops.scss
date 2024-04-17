@@ -1,0 +1,310 @@
+.pops{
+    margin-top: 4rem;
+
+    &__title{
+        @include centerize($justify:space-between);
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size:2.5rem;
+        div{
+            span{
+                color: $pink-play;
+            }
+        }
+        ul{
+            @include centerize;
+            gap: 1.5rem;
+            font-size: $font-size-large;
+
+            @include responsive(phone){
+                display: none;
+            }
+        }
+        li{
+            position: relative;
+            transition: all 200ms ease-out;
+            cursor: pointer;
+            &:hover{
+                color: $blue-bg-play;
+                &::before{
+                    transform: scale(1);
+                }
+            }
+            &::before{
+                content: "";
+                width: 100%;
+                position: absolute;
+                height: .2rem;
+                top: -1rem;
+                background-color: #007dd4;
+                transform: scale(0);
+                transition: all 200ms ease-out;
+            }
+        }
+
+        &-list{
+
+            position: relative;
+            display: none;
+            @include responsive(phone){
+                display: block;
+            }
+
+            &-items{
+                position: absolute;
+                right: 0;
+                z-index: 100;
+                background-color:$bg-play;
+                padding: 1rem;
+                border-radius: 1rem;
+                @include centerize(start);
+                flex-direction: column;
+                gap: 1rem;
+                display: none;
+                font-size: $font-size-large;
+                
+            }
+            
+            &-item{
+                font-size: 1.5rem;
+                cursor: pointer;
+                transition: all 200ms ease-out;
+                &:hover{
+                    color: $blue-bg-play;
+                }
+            }
+            i{
+                cursor: pointer;
+            }
+            &:hover &-items{
+                @include centerize(start);
+                flex-direction: column;
+                gap: 1rem;
+
+            }
+        }
+
+    }
+
+    &__content{
+        @include centerize;
+        width: 100%;
+        height: 50rem;
+        gap: 1rem;
+        margin-top: 3rem;
+        flex-wrap: wrap;
+    }
+    &__need{
+        width: 65%;
+        height: 100%;
+        background-color: #202938;
+        padding: 1.6rem;
+        border-radius: .5rem;
+        position: relative;
+        overflow: hidden;
+
+        @include responsive(phonel){
+            width: 100%;
+        }
+        @include responsive(phone){
+            height: 85%;
+        }
+        @include responsive(smarts){
+            height: 70%;
+        }
+
+        &-pic{
+
+            height: 100%;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 1rem;
+                transition: all 500ms ease-out;
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+            }
+            &-cov{
+                @include centerize;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                text-transform: uppercase;
+                font-size: 3rem;
+                opacity: .7;
+                border-radius: .5rem;
+                z-index: 10;
+                background: linear-gradient(120deg, #4375b2 39%, #a43337 100%);
+                transition: all 500ms ease-out;
+            }
+            &:hover &-cov {
+                top: 0;      
+            }
+
+        }
+        &-discount{
+            @include centerize;
+            width: 35%;
+            width: 24rem;
+            position: absolute;
+            transform: rotate(40deg);
+            top: 3.5rem;
+            right: -5.2rem;
+            font-weight: bolder;
+            text-transform: uppercase;
+            font-size: $font-size-large;
+            z-index: 10;
+            color: black;
+            background-color: #ffef00;
+            padding: 1rem 0;
+        }
+    }
+    &__logos{
+        width: 33%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        @include responsive(phonel){
+            flex-direction: row;
+            width: 100%;
+            height: fit-content;
+        }
+    }
+
+
+    &__logo1{
+        width: 100%;
+        height: 49%;
+        background-color: #202938;
+        padding: 1rem;
+        border-radius: 1rem;
+        overflow: hidden;
+
+        &-pic{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 1rem;
+            }
+            &-info{
+                position: absolute;
+                top: 1rem;
+                left: 1rem;
+                font-size: $font-size-large;
+                text-transform: uppercase;
+                h4{
+                    margin-bottom: 1rem;
+                }
+                span{
+                    color:$gray-play;
+                    font-size: $font-size-medium;
+                }
+            }
+            &-cov{
+                @include centerize;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(128, 128, 128, 0.4);
+                top: 0;
+                left: 0;
+                border-radius: 1rem;
+                opacity: .8;
+                transform: scale(0);
+                transform-origin: 50% 100%;
+                transition: all 400ms ease-out;
+                overflow: hidden;
+                i{
+                    padding: 1.6rem;
+                    background-color: #0658c6;
+                    font-size: 2rem;
+                    color: white;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+            }
+            &:hover &-cov{
+                transform: scale(1);
+            }
+        }
+
+    }
+    &__logo2{
+        width: 100%;
+        height: 49%;
+        background-color: #202938;
+        padding: 1rem;
+        border-radius: 1rem;
+        overflow: hidden;
+
+        &-pic{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 1rem;
+            }
+            &-info{
+                position: absolute;
+                top: 1rem;
+                left: 1rem;
+                font-size: $font-size-large;
+                text-transform: uppercase;
+                h4{
+                    margin-bottom: 1rem;
+                }
+                span{
+                    color:$gray-play;
+                    font-size: $font-size-medium;
+                }
+            }
+            &-cov{
+                @include centerize;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(128, 128, 128, 0.4);
+                top: 0;
+                left: 0;
+                border-radius: 1rem;
+                opacity: .8;
+                transform: scale(0);
+                transform-origin: 50% 100%;
+                transition: all 400ms ease-out;
+                overflow: hidden;
+                i{
+                    padding: 1.6rem;
+                    background-color: #0658c6;
+                    font-size: 2rem;
+                    color: white;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+            }
+            &:hover &-cov{
+                transform: scale(1);
+            }
+        }
+
+    }
+
+}
